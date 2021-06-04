@@ -2,7 +2,21 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Fetch from './components/Fetch';
 import WeatherList from './components/WeatherList';
+import styled from 'styled-components';
 
+const Header = styled.div`
+margin: 5rem;
+font-size: 40px;
+color: orange;
+font-weight: bolder;
+`;
+
+const HeaderFetchContent = styled.div`
+margin: 1rem;
+font-size: 30px;
+color: orange;
+font-weight: light;
+`;
 
 const App = () => {
   const { data, error, isLoading, setUrl } = Fetch();
@@ -42,15 +56,15 @@ const App = () => {
   };
 
   const fetchContent = () => {
-    if (error) return <p>Error when fetching: {error}</p>
-    if (!data && isLoading) return <p>LOADING...</p>
+    if (error) return <HeaderFetchContent>Error when fetching: {error}</HeaderFetchContent>
+    if (!data && isLoading) return <HeaderFetchContent>LOADING...</HeaderFetchContent>
     if (!data) return null;
     return <WeatherList weathers={data.daily} />
   };
 
   return (
     <div className="App">
-      <h1>Choose city to check weather</h1>
+      <Header>Choose city to check weather</Header>
       <select className="select" value={city} onChange={event => createUrl(event)}>
         <option value='cities'> -- cities -- </option>
         <option value='sthlm'> STOCKHOLM </option>
@@ -59,9 +73,9 @@ const App = () => {
       </select>
 
       {fetchContent()}
+      
     </div>
   );
 }
-
 
 export default App;
