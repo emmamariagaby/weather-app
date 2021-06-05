@@ -2,7 +2,6 @@ import React from 'react'
 import WeatherCard from './WeatherCard';
 import styled from 'styled-components';
 
-
 const CardBodyContainer = styled.div`
 margin: 1rem;
 display: flex;
