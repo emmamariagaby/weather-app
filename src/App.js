@@ -16,7 +16,7 @@ font-weight: bolder;
 const HeaderFetchContent = styled.div`
 margin: 1rem;
 font-size: 30px;
-color: orange;
+color: grey;
 font-weight: light;
 `;
 
