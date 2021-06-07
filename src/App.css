@@ -1,11 +1,26 @@
+* {
+  background-image: url(./assets/lighterSky.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .App {
-  font-family: "Courier New", Courier, monospace;
+  font-family: serif;
   text-align: center;
 }
 
 .select {
   width: 12rem;
   height: 2rem;
-  background-color: whitesmoke;
   margin: 0.5rem;
+  color: grey;
+}
+
+div {
+  background-image: none;
+}
+
+p, img {
+  background-color: white;
+  background-image: none;
 }

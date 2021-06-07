@@ -5,9 +5,11 @@ import WeatherList from './components/WeatherList';
 import styled from 'styled-components';
 
 const Header = styled.div`
-margin: 5rem;
+margin: 1rem;
+background-image: none;
+padding: 2rem;
 font-size: 40px;
-color: orange;
+color: grey;
 font-weight: bolder;
 `;
 
@@ -64,9 +66,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header>Choose city to check weather</Header>
+      <Header>Weather app</Header>
       <select className="select" value={city} onChange={event => createUrl(event)}>
-        <option value='cities'> -- cities -- </option>
+        <option value='cities'> -- choose city -- </option>
         <option value='sthlm'> STOCKHOLM </option>
         <option value='berlin'> BERLIN </option>
         <option value='oslo'> OSLO </option>

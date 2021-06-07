@@ -3,12 +3,10 @@ import WeatherCard from './WeatherCard';
 import styled from 'styled-components';
 
 const CardBodyContainer = styled.div`
-margin: 1rem;
 display: flex;
 flex-flow: row wrap;
 justify-content: center;
-background-color: orange;
-border: solid 0.5rem darkorange;
+background-image: transparent;
 `;
 
 const WeatherList = ({ weathers }) => {
