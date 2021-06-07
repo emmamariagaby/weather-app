@@ -5,8 +5,8 @@ import WeatherList from './components/WeatherList';
 import styled from 'styled-components';
 
 const Header = styled.div`
-margin: 1rem;
 background-image: none;
+background-color: transparent;
 padding: 2rem;
 font-size: 40px;
 color: grey;

@@ -1,7 +1,10 @@
-* {
-  background-image: url(./assets/lighterSky.jpg); 
-  background-repeat: no-repeat;
+html {
+  background-image: url(./assets/background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100%;
+  width: 100%;
 }
 
 .App {
@@ -14,13 +17,13 @@
   height: 2rem;
   margin: 0.5rem;
   color: grey;
+  background-color: transparent;
 }
 
+p,
+img,
 div {
-  background-image: none;
-}
-
-p, img {
   background-color: white;
   background-image: none;
+  background-color: transparent;
 }

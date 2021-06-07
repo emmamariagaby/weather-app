@@ -6,7 +6,7 @@ const CardBodyContainer = styled.div`
 display: flex;
 flex-flow: row wrap;
 justify-content: center;
-background-image: transparent;
+background-color: transparent;
 `;
 
 const WeatherList = ({ weathers }) => {
